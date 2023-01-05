@@ -10,6 +10,26 @@ import UIKit
 struct Constants {
     static let cornerRadius: CGFloat = 8.0
 }
+extension String{
+    func safedatabasekey() -> String{
+        return self.replacingOccurrences(of: "@", with: "-").replacingOccurrences(of: ".", with: "-")
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 extension UIView{
     public var width: CGFloat{
@@ -36,8 +56,4 @@ extension UIView{
         return frame.origin.x + frame.size.width
     }
 }
-extension String{
-    func safedatabasekey() -> String{
-        return self.replacingOccurrences(of: "@", with: "-").replacingOccurrences(of: ".", with: "-")
-    }
-}
+

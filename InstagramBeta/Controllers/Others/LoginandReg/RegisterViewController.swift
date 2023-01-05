@@ -74,7 +74,7 @@ class RegisterViewController: UIViewController {
         field.layer.borderColor = UIColor.secondaryLabel.cgColor
         return field
     }()
-    
+
     private let SubmitBttn: UIButton = {
         let Submit = UIButton()
         Submit.setTitle("Submit", for: .normal)
@@ -107,18 +107,18 @@ class RegisterViewController: UIViewController {
         PasswordTxtfield.frame = CGRect(x: 20, y: EmailTxtfield.bottom+20, width: view.width-40, height: 52)
         ConformPasswordTxtfield.frame = CGRect(x: 20, y: PasswordTxtfield.bottom+20, width: view.width-40, height: 52)
         SubmitBttn.frame = CGRect(x: 50, y: ConformPasswordTxtfield.bottom+50, width: view.width-100, height: 52)
-
     }
     @objc private func DidtapSubmitBtn(){
         UsernameTxtfield.resignFirstResponder()
         EmailTxtfield.resignFirstResponder()
         PasswordTxtfield.resignFirstResponder()
         ConformPasswordTxtfield.resignFirstResponder()
-        guard let username = UsernameTxtfield.text, !username.isEmpty,
-              let email = EmailTxtfield.text, !email.isEmpty,
-              let password = PasswordTxtfield.text, !password.isEmpty, password.count >= 8,
-              let conformpassword = ConformPasswordTxtfield.text, !conformpassword.isEmpty,
-              password == conformpassword else {
+        
+        
+        guard  let username = UsernameTxtfield.text,
+            let email = EmailTxtfield.text,
+              let password = PasswordTxtfield.text,
+              let conformpassword = ConformPasswordTxtfield.text else {
             return
         }
         Authmanage.shared.RegisterNewUser(username: username, email: email, password: password) { register in
@@ -126,9 +126,28 @@ class RegisterViewController: UIViewController {
                 if register{
                     self.dismiss(animated: true, completion: nil)
                 }else{
-                    let alerts = UIAlertController(title: "Signin Error", message: "entered username and email  is wrong", preferredStyle: .alert)
-                    alerts.addAction(UIAlertAction(title: "Close", style: .cancel, handler: nil))
-                    self.present(alerts, animated: true)
+                    if username.isEmpty, email.isEmpty, password.isEmpty, conformpassword.isEmpty {
+                        let alerts = UIAlertController(title: "Sign In", message: "please enter all the details", preferredStyle: .alert)
+                        alerts.addAction(UIAlertAction(title: "Close", style: .cancel, handler: nil))
+                        self.present(alerts, animated: true)
+                    }
+                    else if username.count<=5 {
+                        let alerts = UIAlertController(title: "Signin Error", message: "entered username is wrong", preferredStyle: .alert)
+                        alerts.addAction(UIAlertAction(title: "Close", style: .cancel, handler: nil))
+                        self.present(alerts, animated: true)
+                    }else if email.count<=5 {
+                        let alerts = UIAlertController(title: "Signin Error", message: "entered email is wrong", preferredStyle: .alert)
+                        alerts.addAction(UIAlertAction(title: "Close", style: .cancel, handler: nil))
+                        self.present(alerts, animated: true)
+                    }else if password.count<8 {
+                        let alerts = UIAlertController(title: "Signin Error", message: "entered passwod is wrong", preferredStyle: .alert)
+                        alerts.addAction(UIAlertAction(title: "Close", style: .cancel, handler: nil))
+                        self.present(alerts, animated: true)
+                    }else if conformpassword != password{
+                        let alerts = UIAlertController(title: "Signin Error", message: "entered conformpassword did not match ", preferredStyle: .alert)
+                        alerts.addAction(UIAlertAction(title: "Close", style: .cancel, handler: nil))
+                        self.present(alerts, animated: true)
+                    }
                 }
             }
         }
