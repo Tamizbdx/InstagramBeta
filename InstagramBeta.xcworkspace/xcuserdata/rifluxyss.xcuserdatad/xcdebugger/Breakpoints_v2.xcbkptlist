@@ -3,4 +3,134 @@
    uuid = "8A6EBF32-5397-437D-92BA-A71FC897E6FB"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8C3E2794-4F0E-4803-9EB1-8C4B48C84E12"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "InstagramBeta/Controllers/Others/LoginandReg/RegisterViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "148"
+            endingLineNumber = "148"
+            landmarkName = "DidtapSubmitBtn()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "010A4332-0E3E-416A-B10A-265896C69CC0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "InstagramBeta/Controllers/Others/LoginandReg/RegisterViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "128"
+            endingLineNumber = "128"
+            landmarkName = "DidtapSubmitBtn()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5571DCB3-B48F-495B-BEB2-2DE2C08D2886"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "InstagramBeta/Controllers/Others/LoginandReg/RegisterViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "125"
+            endingLineNumber = "125"
+            landmarkName = "DidtapSubmitBtn()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5571DCB3-B48F-495B-BEB2-2DE2C08D2886 - 8c9720dc519df6e6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool) -&gt; () in InstagramBeta.RegisterViewController.(DidtapSubmitBtn in _270C0A270FAFA3B9E5BEF2D63EF325CD)() -&gt; ()"
+                  moduleName = "InstagramBeta"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rifluxyss/Desktop/InstagramBeta/InstagramBeta/Controllers/Others/LoginandReg/RegisterViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "125"
+                  endingLineNumber = "125"
+                  offsetFromSymbolStart = "379">
+               </Location>
+               <Location
+                  uuid = "5571DCB3-B48F-495B-BEB2-2DE2C08D2886 - dbd8e91ac7a0a778"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 (Swift.Bool) -&gt; () in InstagramBeta.RegisterViewController.(DidtapSubmitBtn in _270C0A270FAFA3B9E5BEF2D63EF325CD)() -&gt; ()"
+                  moduleName = "InstagramBeta"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rifluxyss/Desktop/InstagramBeta/InstagramBeta/Controllers/Others/LoginandReg/RegisterViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "126"
+                  endingLineNumber = "126"
+                  offsetFromSymbolStart = "542">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2B22660E-2324-4B52-B7CC-2B901E5D30E3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "InstagramBeta/Controllers/Others/LoginandReg/RegisterViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
+            landmarkName = "DidtapSubmitBtn()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2B22660E-2324-4B52-B7CC-2B901E5D30E3 - b40470afa0017759"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "InstagramBeta.RegisterViewController.(DidtapSubmitBtn in _270C0A270FAFA3B9E5BEF2D63EF325CD)() -&gt; ()"
+                  moduleName = "InstagramBeta"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rifluxyss/Desktop/InstagramBeta/InstagramBeta/Controllers/Others/LoginandReg/RegisterViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "124"
+                  endingLineNumber = "124"
+                  offsetFromSymbolStart = "1957">
+               </Location>
+               <Location
+                  uuid = "2B22660E-2324-4B52-B7CC-2B901E5D30E3 - 8c9720dc519df6e6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool) -&gt; () in InstagramBeta.RegisterViewController.(DidtapSubmitBtn in _270C0A270FAFA3B9E5BEF2D63EF325CD)() -&gt; ()"
+                  moduleName = "InstagramBeta"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rifluxyss/Desktop/InstagramBeta/InstagramBeta/Controllers/Others/LoginandReg/RegisterViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "125"
+                  endingLineNumber = "125"
+                  offsetFromSymbolStart = "379">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

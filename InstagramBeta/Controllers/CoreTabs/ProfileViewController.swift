@@ -15,6 +15,7 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
         EditProfileBtn.layer.cornerRadius = Constants.cornerRadius
         EditProfileBtn.addTarget(self, action: #selector(Editprofilebtntapped), for: .touchUpInside)
+        NotificationCenter.default.post(name: NSNotification.Name("Profile Pic"), object: ProfilePicImagView.image)
     }
 
    @objc func Editprofilebtntapped(){

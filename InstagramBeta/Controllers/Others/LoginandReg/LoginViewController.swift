@@ -154,7 +154,7 @@ class LoginViewController: UIViewController {
                     self.dismiss(animated: true, completion: nil)
                 }else{
                     //it will show the error
-                    let alert = UIAlertController(title: "Login Error", message: "entered username or email and password is wrong", preferredStyle: .alert)
+                    let alert = UIAlertController(title: "Login Error", message: "entered email and password is wrong", preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "Close", style: .cancel, handler: nil))
                     self.present(alert, animated: true)
                 }

@@ -6,7 +6,8 @@
 //
 
 import UIKit
-import Firebase
+import FirebaseDatabase
+import FirebaseStorage
 class EditProfileViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
     
     @IBOutlet weak var nametxt: UITextField!
@@ -17,14 +18,15 @@ class EditProfileViewController: UIViewController, UIImagePickerControllerDelega
     @IBOutlet weak var gendertxt: UITextField!
     @IBOutlet weak var ProfilePicImageView: UIImageView!
     private var data = DatabaseReference.init()
-   
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.data = Database.database().reference()
+        NotificationCenter.default.addObserver(self, selector: #selector(imgs), name: NSNotification.Name("Profile Pic"), object: ProfilePicImageView.image)
     }
-
+    @objc func imgs(){}
     @IBAction func SaveDatabtn(_ sender: Any) {
-        Savedata()
+       Savedata()
         self.dismiss(animated: true, completion: nil)
     }
     func Savedata(){
@@ -58,7 +60,7 @@ class EditProfileViewController: UIViewController, UIImagePickerControllerDelega
     }
 }
 
-extension EditProfileViewController{
+extension EditProfileViewController {
         func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
             var selectimg:UIImage?
             if let editimg = info[.editedImage] as? UIImage{
@@ -78,4 +80,25 @@ extension EditProfileViewController{
             print("cancel")
         }
 }
-
+extension EditProfileViewController{
+    
+}
+//extension EditProfileViewController {
+//    let picker = UIImagePickerController()
+//    func Upload(_ image: UIImage, completion: @escaping ((_ url: URL?)->())){
+//        let storageref = Storage.storage().reference().child("ProfilePicture.png")
+//        let image = ProfilePicImageView.image?.pngData()
+//        let metadata = StorageMetadata()
+//        metadata.contentType = "ProfilePicture/png"
+//        storageref.putData(image!, metadata: metadata) { (metadata, error) in
+//            if error == nil {
+//                storageref.downloadURL { (url, error) in
+//                    completion(url)
+//                }
+//            }else{
+//                completion(nil)
+//            }
+//
+//        }
+//    }
+//}

@@ -123,7 +123,7 @@ class RegisterViewController: UIViewController {
         }
         Authmanage.shared.RegisterNewUser(username: username, email: email, password: password) { register in
             DispatchQueue.main.async {
-                if register{
+                if register {
                     self.dismiss(animated: true, completion: nil)
                 }else{
                     if username.isEmpty, email.isEmpty, password.isEmpty, conformpassword.isEmpty {
